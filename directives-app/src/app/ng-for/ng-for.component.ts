@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgForComponent implements OnInit {
   names = ['Ana', 'John', 'Mark', 'Mariel'];
-
+  cities = [
+    { name: 'São Paulo', state: 'SP' },
+    { name: 'Fortaleza', state: 'CE' },
+    { name: 'Curitiba', state: 'PR' },
+    { name: 'Rio de Janeiro', state: 'RJ' },
+  ];
   constructor() {}
 
   ngOnInit(): void {}
