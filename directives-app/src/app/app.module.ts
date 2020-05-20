@@ -8,9 +8,10 @@ import { FormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
+import { NgClassComponent } from './ng-class/ng-class.component';
 
 @NgModule({
-  declarations: [AppComponent, NgStyleComponent],
+  declarations: [AppComponent, NgStyleComponent, NgClassComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
