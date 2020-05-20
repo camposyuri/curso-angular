@@ -34,7 +34,7 @@ export class NgForFormComponent implements OnInit {
       age: this.age,
     });
     console.log(this.clients);
-    // cancel()
+    this.cancel();
   }
 
   cancel() {
@@ -43,5 +43,9 @@ export class NgForFormComponent implements OnInit {
       (this.phone = ''),
       (this.city = ''),
       (this.age = 0);
+  }
+
+  delete(i: number) {
+    this.clients.splice(i, 1);
   }
 }
