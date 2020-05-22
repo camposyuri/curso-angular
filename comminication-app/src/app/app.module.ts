@@ -15,6 +15,9 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ItemClientComponent } from './clients/item-client/item-client.component';
+import { ParentChildComponent } from './parent-child/parent-child.component';
+import { TimerComponent } from './parent-child/timer/timer.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,8 @@ import { ItemClientComponent } from './clients/item-client/item-client.component
     ChildItemComponent,
     ClientsComponent,
     ItemClientComponent,
+    ParentChildComponent,
+    TimerComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +40,7 @@ import { ItemClientComponent } from './clients/item-client/item-client.component
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatProgressBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
